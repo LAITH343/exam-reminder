@@ -1,3 +1,4 @@
+import 'package:exam_reminder/localization/app_localizations.dart';
 import 'package:exam_reminder/screens/splash/methods.dart';
 import 'package:flutter/material.dart';
 
@@ -20,7 +21,7 @@ class _SplashScreenState extends State<SplashScreen> {
     return Scaffold(
       body: Center(
         child: Text(
-          "Exams Reminder",
+          AppLocalizations.of(context)!.appSplashScreenText,
           style: Theme.of(context).textTheme.headlineMedium,
         ),
       ),

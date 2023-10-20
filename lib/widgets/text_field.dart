@@ -1,3 +1,4 @@
+import 'package:exam_reminder/localization/app_localizations.dart';
 import 'package:flutter/material.dart';
 
 // ignore: must_be_immutable
@@ -22,7 +23,7 @@ class _CustomInputFieldState extends State<CustomInputField> {
       return null;
     }
     if (widget.controller.text.isEmpty) {
-      return "This field is required";
+      return AppLocalizations.of(context)!.textFiledRequiredErrorText;
     }
     return null;
   }

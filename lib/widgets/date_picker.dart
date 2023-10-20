@@ -1,4 +1,5 @@
 import 'package:exam_reminder/global_methods.dart';
+import 'package:exam_reminder/localization/app_localizations.dart';
 import 'package:flutter/material.dart';
 
 class CustomDatePicker extends StatefulWidget {
@@ -24,10 +25,10 @@ class _CustomDatePickerState extends State<CustomDatePicker> {
       return null;
     }
     if (widget.controller.text.isEmpty) {
-      return "this field cann't be empty";
+      return AppLocalizations.of(context)!.textFiledRequiredErrorText;
     }
     if (!isDateValid(widget.controller.text.split('-'))) {
-      return "Wrong date format";
+      return AppLocalizations.of(context)!.datePickerWrongFormat;
     }
     return null;
   }

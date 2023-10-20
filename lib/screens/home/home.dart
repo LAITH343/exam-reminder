@@ -16,7 +16,7 @@ class HomeScreen extends StatelessWidget {
         length: value.length(),
         child: Scaffold(
           drawer: const HomeScreenDrawer(),
-          appBar: generateHomeAppBar(value),
+          appBar: generateHomeAppBar(value, context),
           body: HomeScreenBody(
             value: value,
           ),

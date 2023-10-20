@@ -6,7 +6,7 @@ class AppThemeManager {
   bool isDarkEnabled = false;
 
   Future<void> init() async {
-    final SharedPreferences prefs = await SharedPreferences.getInstance().then((value) => value);
+    final SharedPreferences prefs = await SharedPreferences.getInstance();
     if (prefs.getBool('theme') != null){
       if (prefs.getBool('theme') == true){
         theme = ThemeData.dark();

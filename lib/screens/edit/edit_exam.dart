@@ -1,4 +1,5 @@
 import 'package:exam_reminder/constants.dart';
+import 'package:exam_reminder/localization/app_localizations.dart';
 import 'package:exam_reminder/widgets/date_picker.dart';
 import 'package:exam_reminder/widgets/text_field.dart';
 import 'package:exam_reminder/providers/exams.dart';
@@ -45,7 +46,7 @@ class _EditExamScreenState extends State<EditExamScreen> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.deepPurple,
-        title: const Text("editing..."),
+        title: Text(AppLocalizations.of(context)!.appBarEditExam),
       ),
       body: Consumer<ExamsProvider>(
         builder: (context, value, child) => Column(
@@ -53,11 +54,11 @@ class _EditExamScreenState extends State<EditExamScreen> {
           children: [
             CustomInputField(
               controller: sNameController,
-              helpText: "Subject Name",
+              helpText: AppLocalizations.of(context)!.textFieldSubjectName,
             ),
             CustomInputField(
               controller: descController,
-              helpText: "description",
+              helpText: AppLocalizations.of(context)!.textFieldDescription,
             ),
             CustomDatePicker(
               onDateSelected: (value) {
@@ -78,11 +79,12 @@ class _EditExamScreenState extends State<EditExamScreen> {
                     description: descController.text,
                     date: selectedDate ?? DateTime(2023),
                   ),
+                  context: context,
                 )) {
                   Navigator.of(context).pop();
                 }
               },
-              child: const Text("Save"),
+              child: Text(AppLocalizations.of(context)!.saveExamButton),
             )
           ],
         ),

@@ -1,0 +1,36 @@
+{
+  "appBarHome": "Exam Remidner",
+  "noExams": "لا يوجد امتحان 😎",
+  "drawerClose": "أغلاق",
+  "drawerSettings": "الأعدادات",
+  "drawerSourceCode": "كود التطبيق",
+  "settingsAppTheme": "مظهر التطبيق",
+  "settingsAppLocale": "لغة التطبيق",
+  "textFieldSubjectName": "أسم الموضوع",
+  "textFieldDescription": "الوصف",
+  "appBarAddExam": "أضافه امتحان جديد",
+  "appBarEditExam": "تحرير...",
+  "appBarSettings": "الأعدادات",
+  "saveExamButton": "حفظ",
+  "textFiledRequiredErrorText": "هذا الحقل مطلوب",
+  "datePickerWrongFormat": "تنسيق التاريخ خاطئ",
+  "sunday": "الأحد",
+  "monday": "الإثنين",
+  "tuesday": "الثلاثاء",
+  "wednesday": "الأربعاء",
+  "thursday": "الخميس",
+  "friday": "الجمعة",
+  "saturday": "السبت",
+  "today": "اليوم",
+  "examAddedMessage": "تم الأضافه",
+  "examFieldRequiredMessage": "الرجاء قم بملئ كل الحقول اولأ!",
+  "examFialedToAddMessage": "فشلت الأضافه",
+  "examEditingNoChangeMassage": "لايمكن الحفظ, لا يوجد هناك تعديلات",
+  "examEditingChangedMessage": "تم التعديل",
+  "examEditingFailedToChangeMassage": "فشل التعديل",
+  "appSplashScreenText": "Exams Reminder",
+  "lightThemeText": "فاتح",
+  "darkThemeText": "داكن",
+  "englishLocaleText": "الانجليزية (الولايات المتحدة)",
+  "arabicLocaleText": "العربية (العراق)"
+}

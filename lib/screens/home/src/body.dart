@@ -1,4 +1,5 @@
 import 'package:exam_reminder/constants.dart';
+import 'package:exam_reminder/localization/app_localizations.dart';
 import 'package:exam_reminder/providers/exams.dart';
 import 'package:exam_reminder/screens/edit/edit_exam.dart';
 import 'package:exam_reminder/types.dart';
@@ -18,8 +19,8 @@ class HomeScreenBody extends StatelessWidget {
   Widget build(BuildContext context) {
     return Visibility(
       visible: value.length() != 0,
-      replacement: const Center(
-        child: Text("There's no exam 😎"),
+      replacement: Center(
+        child: Text(AppLocalizations.of(context)!.noExams),
       ),
       child: TabBarView(
         children: [

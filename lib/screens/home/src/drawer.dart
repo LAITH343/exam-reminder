@@ -1,4 +1,5 @@
 import 'package:exam_reminder/constants.dart';
+import 'package:exam_reminder/localization/app_localizations.dart';
 import 'package:exam_reminder/providers/theme.dart';
 import 'package:exam_reminder/screens/settings/settings.dart';
 import 'package:flutter/material.dart';
@@ -29,7 +30,7 @@ class HomeScreenDrawer extends StatelessWidget {
                         onPressed: () {
                           Navigator.of(context).pop();
                         },
-                        title: "Close",
+                        title: AppLocalizations.of(context)!.drawerClose,
                         icon: Icons.close,
                       ),
                       const Divider(),
@@ -41,7 +42,7 @@ class HomeScreenDrawer extends StatelessWidget {
                             ),
                           );
                         },
-                        title: "Settings",
+                        title: AppLocalizations.of(context)!.drawerSettings,
                         icon: Icons.settings_outlined,
                       ),
                       const Divider(),
@@ -53,7 +54,7 @@ class HomeScreenDrawer extends StatelessWidget {
                             ),
                           );
                         },
-                        title: "Source code",
+                        title: AppLocalizations.of(context)!.drawerSourceCode,
                         icon: Icons.launch,
                       ),
                     ],
@@ -78,15 +79,10 @@ class HomeScreenDrawer extends StatelessWidget {
                   },
                   child: RichText(
                     text: const TextSpan(
-                      text: "By ",
-                      children: [
-                        TextSpan(
-                          text: "@LAITH343",
-                          style: TextStyle(
-                            color: Colors.blue,
-                          ),
-                        ),
-                      ],
+                      text: "@LAITH343",
+                      style: TextStyle(
+                        color: Colors.blue,
+                      ),
                     ),
                   ),
                 )
