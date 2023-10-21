@@ -1,4 +1,6 @@
 {
+  "@@locale": "ar",
+  "@@author": "ليث",
   "appBarHome": "Exam Remidner",
   "noExams": "لا يوجد امتحان 😎",
   "drawerClose": "أغلاق",
@@ -32,5 +34,8 @@
   "lightThemeText": "فاتح",
   "darkThemeText": "داكن",
   "englishLocaleText": "الانجليزية (الولايات المتحدة)",
-  "arabicLocaleText": "العربية (العراق)"
+  "arabicLocaleText": "العربية (العراق)",
+  "welcomeTitle": "مرحباً",
+  "welcomeSubTitle": "حدد خياراتك المفضلة، ويمكنك تغييرها لاحقًا من الإعدادات",
+  "welcomeDoneButton": "البدء"
 }

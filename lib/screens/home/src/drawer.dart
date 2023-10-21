@@ -1,6 +1,6 @@
 import 'package:exam_reminder/constants.dart';
 import 'package:exam_reminder/localization/app_localizations.dart';
-import 'package:exam_reminder/providers/theme.dart';
+import 'package:exam_reminder/providers/updater.dart';
 import 'package:exam_reminder/screens/settings/settings.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -13,7 +13,7 @@ class HomeScreenDrawer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Consumer<ThemeUpdater>(
+    return Consumer<AppUpdater>(
       builder: (context, value, child) => Drawer(
           child: SafeArea(
         child: Column(

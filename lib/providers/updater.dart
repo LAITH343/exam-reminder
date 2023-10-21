@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
 
-class ThemeUpdater extends ChangeNotifier {
+class AppUpdater extends ChangeNotifier {
   void update() => notifyListeners();
 }

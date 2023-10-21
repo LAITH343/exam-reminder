@@ -36,54 +36,45 @@ class _CustomDatePickerState extends State<CustomDatePicker> {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      width: MediaQuery.of(context).size.width * .8,
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          SizedBox(
-            width: MediaQuery.of(context).size.width * .6,
-            child: TextFormField(
-              maxLength: 10,
-              keyboardType: TextInputType.number,
-              controller: widget.controller,
-              onTap: () {
-                if (!tapped) {
-                  tapped = true;
+      width: MediaQuery.of(context).size.width * .7,
+      child: TextFormField(
+        maxLength: 10,
+        keyboardType: TextInputType.number,
+        controller: widget.controller,
+        onTap: () {
+          if (!tapped) {
+            tapped = true;
+          }
+          setState(() {});
+        },
+        decoration: InputDecoration(
+            hintText: widget.helpText,
+            errorText: checkFormat,
+            suffixIcon: IconButton(
+              onPressed: () async {
+                if (await onSelectDatePressed(
+                  context,
+                  widget.onDateSelected,
+                  widget.controller,
+                )) {
+                  setState(() {});
                 }
-                setState(() {});
               },
-              decoration: InputDecoration(
-                hintText: widget.helpText,
-                errorText: checkFormat,
+              icon: const Icon(Icons.date_range),
+            )),
+        onChanged: (value) {
+          List<String> sdate = widget.controller.text.split('-');
+          if (isDateValid(sdate)) {
+            widget.onDateSelected(
+              DateTime(
+                int.parse(sdate[0]),
+                int.parse(sdate[1]),
+                int.parse(sdate[2]),
               ),
-              onChanged: (value) {
-                List<String> sdate = widget.controller.text.split('-');
-                if (isDateValid(sdate)) {
-                  widget.onDateSelected(
-                    DateTime(
-                      int.parse(sdate[0]),
-                      int.parse(sdate[1]),
-                      int.parse(sdate[2]),
-                    ),
-                  );
-                }
-                setState(() {});
-              },
-            ),
-          ),
-          IconButton(
-            onPressed: () async {
-              if (await onSelectDatePressed(
-                context,
-                widget.onDateSelected,
-                widget.controller,
-              )) {
-                setState(() {});
-              }
-            },
-            icon: const Icon(Icons.date_range),
-          ),
-        ],
+            );
+          }
+          setState(() {});
+        },
       ),
     );
   }

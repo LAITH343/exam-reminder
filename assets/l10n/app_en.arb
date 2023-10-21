@@ -1,4 +1,6 @@
 {
+  "@@locale": "en",
+  "@@author": "laith",
   "appBarHome": "Exam Remidner",
   "noExams": "There's no exam 😎",
   "drawerClose": "Close",
@@ -32,5 +34,8 @@
   "lightThemeText": "Light",
   "darkThemeText": "Dark",
   "englishLocaleText": "English (US)",
-  "arabicLocaleText": "Arabic (Iraq)"
+  "arabicLocaleText": "Arabic (Iraq)",
+  "welcomeTitle": "Welcome",
+  "welcomeSubTitle": "Select your preferred options, you can change it later from Settings",
+  "welcomeDoneButton": "Get started"
 }

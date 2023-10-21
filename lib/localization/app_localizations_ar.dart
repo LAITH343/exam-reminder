@@ -105,4 +105,13 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get arabicLocaleText => 'العربية (العراق)';
+
+  @override
+  String get welcomeTitle => 'مرحباً';
+
+  @override
+  String get welcomeSubTitle => 'حدد خياراتك المفضلة، ويمكنك تغييرها لاحقًا من الإعدادات';
+
+  @override
+  String get welcomeDoneButton => 'البدء';
 }

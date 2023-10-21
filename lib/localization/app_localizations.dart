@@ -296,6 +296,24 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Arabic (Iraq)'**
   String get arabicLocaleText;
+
+  /// No description provided for @welcomeTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Welcome'**
+  String get welcomeTitle;
+
+  /// No description provided for @welcomeSubTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Select your preferred options, you can change it later from Settings'**
+  String get welcomeSubTitle;
+
+  /// No description provided for @welcomeDoneButton.
+  ///
+  /// In en, this message translates to:
+  /// **'Get started'**
+  String get welcomeDoneButton;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {
