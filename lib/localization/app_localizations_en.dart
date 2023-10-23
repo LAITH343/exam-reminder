@@ -114,4 +114,19 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get welcomeDoneButton => 'Get started';
+
+  @override
+  String get deleteWaringMsg => 'Are you sure!';
+
+  @override
+  String get deleteConfirmButton => 'Yes';
+
+  @override
+  String get deleteCancelButton => 'No';
+
+  @override
+  String get deleteSuccessMsg => 'Deleted';
+
+  @override
+  String get deleteFailedMsg => 'deleting failed';
 }

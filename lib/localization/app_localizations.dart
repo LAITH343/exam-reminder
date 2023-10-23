@@ -314,6 +314,36 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Get started'**
   String get welcomeDoneButton;
+
+  /// No description provided for @deleteWaringMsg.
+  ///
+  /// In en, this message translates to:
+  /// **'Are you sure!'**
+  String get deleteWaringMsg;
+
+  /// No description provided for @deleteConfirmButton.
+  ///
+  /// In en, this message translates to:
+  /// **'Yes'**
+  String get deleteConfirmButton;
+
+  /// No description provided for @deleteCancelButton.
+  ///
+  /// In en, this message translates to:
+  /// **'No'**
+  String get deleteCancelButton;
+
+  /// No description provided for @deleteSuccessMsg.
+  ///
+  /// In en, this message translates to:
+  /// **'Deleted'**
+  String get deleteSuccessMsg;
+
+  /// No description provided for @deleteFailedMsg.
+  ///
+  /// In en, this message translates to:
+  /// **'deleting failed'**
+  String get deleteFailedMsg;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

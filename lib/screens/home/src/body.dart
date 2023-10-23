@@ -149,10 +149,10 @@ class ExamCard extends StatelessWidget {
                             child: Column(
                               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                               children: [
-                                const Row(
+                                Row(
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   children: [
-                                    Text("Are You Sure"),
+                                    Text(AppLocalizations.of(context)!.deleteWaringMsg),
                                   ],
                                 ),
                                 Row(
@@ -165,21 +165,20 @@ class ExamCard extends StatelessWidget {
                                               context,
                                               listen: false);
                                           if (p.deleteExam(exam)) {
-                                            EasyLoading.showSuccess("Deleted");
+                                            EasyLoading.showSuccess(AppLocalizations.of(context)!.deleteSuccessMsg);
                                             Navigator.of(context).pop();
                                           } else {
-                                            EasyLoading.showError(
-                                                "Failed to delete");
+                                            EasyLoading.showError(AppLocalizations.of(context)!.deleteFailedMsg);
                                           }
                                         },
                                         style: ElevatedButton.styleFrom(
                                             backgroundColor: Colors.red),
-                                        child: const Text("Yes")),
+                                        child: Text(AppLocalizations.of(context)!.deleteConfirmButton)),
                                     ElevatedButton(
                                       onPressed: () {
                                         Navigator.of(context).pop();
                                       },
-                                      child: const Text("No"),
+                                      child: Text(AppLocalizations.of(context)!.deleteCancelButton),
                                     ),
                                   ],
                                 )

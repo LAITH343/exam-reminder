@@ -37,5 +37,10 @@
   "arabicLocaleText": "العربية (العراق)",
   "welcomeTitle": "مرحباً",
   "welcomeSubTitle": "حدد خياراتك المفضلة، ويمكنك تغييرها لاحقًا من الإعدادات",
-  "welcomeDoneButton": "البدء"
+  "welcomeDoneButton": "البدء",
+  "deleteWaringMsg": "هل أنت متأكد!",
+  "deleteConfirmButton": "نعم",
+  "deleteCancelButton": "كلا",
+  "deleteSuccessMsg": "تم الحذف",
+  "deleteFailedMsg": "فشل الحذف"
 }

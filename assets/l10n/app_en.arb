@@ -37,5 +37,10 @@
   "arabicLocaleText": "Arabic (Iraq)",
   "welcomeTitle": "Welcome",
   "welcomeSubTitle": "Select your preferred options, you can change it later from Settings",
-  "welcomeDoneButton": "Get started"
+  "welcomeDoneButton": "Get started",
+  "deleteWaringMsg": "Are you sure!",
+  "deleteConfirmButton": "Yes",
+  "deleteCancelButton": "No",
+  "deleteSuccessMsg": "Deleted",
+  "deleteFailedMsg": "deleting failed"
 }

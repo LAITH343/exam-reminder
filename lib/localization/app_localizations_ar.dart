@@ -114,4 +114,19 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get welcomeDoneButton => 'البدء';
+
+  @override
+  String get deleteWaringMsg => 'هل أنت متأكد!';
+
+  @override
+  String get deleteConfirmButton => 'نعم';
+
+  @override
+  String get deleteCancelButton => 'كلا';
+
+  @override
+  String get deleteSuccessMsg => 'تم الحذف';
+
+  @override
+  String get deleteFailedMsg => 'فشل الحذف';
 }
