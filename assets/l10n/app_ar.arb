@@ -42,5 +42,9 @@
   "deleteConfirmButton": "نعم",
   "deleteCancelButton": "كلا",
   "deleteSuccessMsg": "تم الحذف",
-  "deleteFailedMsg": "فشل الحذف"
+  "deleteFailedMsg": "فشل الحذف",
+  "titleBarCloseToolTip": "خروج",
+  "titleBarMinimizeTollTip": "تصغير",
+  "titleBarMaximizeToolTip": "تكبير",
+  "titleBarUNMaximizeToolTip": "الغاء التكبير"
 }

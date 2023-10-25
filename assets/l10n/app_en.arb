@@ -42,5 +42,9 @@
   "deleteConfirmButton": "Yes",
   "deleteCancelButton": "No",
   "deleteSuccessMsg": "Deleted",
-  "deleteFailedMsg": "deleting failed"
+  "deleteFailedMsg": "deleting failed",
+  "titleBarCloseToolTip": "exit",
+  "titleBarMinimizeTollTip": "Minimize",
+  "titleBarMaximizeToolTip": "Maximize",
+  "titleBarUNMaximizeToolTip": "un Maximize"
 }

@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
 import 'package:path_provider/path_provider.dart';
 
@@ -49,3 +51,5 @@ Future<bool> onSelectDatePressed(
     return false;
   }
 }
+
+bool isPlatformDesktop() => Platform.isLinux || Platform.isMacOS || Platform.isWindows;

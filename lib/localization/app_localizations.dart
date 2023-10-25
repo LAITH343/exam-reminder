@@ -344,6 +344,30 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'deleting failed'**
   String get deleteFailedMsg;
+
+  /// No description provided for @titleBarCloseToolTip.
+  ///
+  /// In en, this message translates to:
+  /// **'exit'**
+  String get titleBarCloseToolTip;
+
+  /// No description provided for @titleBarMinimizeTollTip.
+  ///
+  /// In en, this message translates to:
+  /// **'Minimize'**
+  String get titleBarMinimizeTollTip;
+
+  /// No description provided for @titleBarMaximizeToolTip.
+  ///
+  /// In en, this message translates to:
+  /// **'Maximize'**
+  String get titleBarMaximizeToolTip;
+
+  /// No description provided for @titleBarUNMaximizeToolTip.
+  ///
+  /// In en, this message translates to:
+  /// **'un Maximize'**
+  String get titleBarUNMaximizeToolTip;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

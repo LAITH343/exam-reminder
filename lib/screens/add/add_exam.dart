@@ -4,6 +4,7 @@ import 'package:exam_reminder/widgets/text_field.dart';
 import 'package:exam_reminder/providers/exams.dart';
 import 'package:exam_reminder/screens/add/methods.dart';
 import 'package:exam_reminder/types.dart';
+import 'package:exam_reminder/widgets/title_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -25,8 +26,12 @@ class _AddExamScreenState extends State<AddExamScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.deepPurple,
         title: Text(AppLocalizations.of(context)!.appBarAddExam),
+        backgroundColor: Colors.deepPurple,
+        flexibleSpace: const TitleBarWindowDraggable(),
+        actions: const [
+          TitleBarButtons(),
+        ],
       ),
       body: Consumer<ExamsProvider>(
         builder: (context, value, child) => Column(

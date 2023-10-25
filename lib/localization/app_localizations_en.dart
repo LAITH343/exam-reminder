@@ -129,4 +129,16 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get deleteFailedMsg => 'deleting failed';
+
+  @override
+  String get titleBarCloseToolTip => 'exit';
+
+  @override
+  String get titleBarMinimizeTollTip => 'Minimize';
+
+  @override
+  String get titleBarMaximizeToolTip => 'Maximize';
+
+  @override
+  String get titleBarUNMaximizeToolTip => 'un Maximize';
 }

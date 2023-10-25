@@ -1,8 +1,10 @@
+import 'package:exam_reminder/localization/app_localizations.dart';
 import 'package:exam_reminder/providers/exams.dart';
 import 'package:exam_reminder/screens/add/add_exam.dart';
-import 'package:exam_reminder/screens/home/src/appbar.dart';
+import 'package:exam_reminder/screens/home/src/tabs.dart';
 import 'package:exam_reminder/screens/home/src/body.dart';
 import 'package:exam_reminder/screens/home/src/drawer.dart';
+import 'package:exam_reminder/widgets/title_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -16,7 +18,17 @@ class HomeScreen extends StatelessWidget {
         length: value.length(),
         child: Scaffold(
           drawer: const HomeScreenDrawer(),
-          appBar: generateHomeAppBar(value, context),
+          appBar: AppBar(
+            bottom: getTabBar(value, context),
+            title: TitleBarWindowDraggable(
+              child: Text(AppLocalizations.of(context)!.appBarHome),
+            ),
+            backgroundColor: Colors.deepPurple,
+            flexibleSpace: const TitleBarWindowDraggable(),
+            actions: const [
+              TitleBarButtons(),
+            ],
+          ),
           body: HomeScreenBody(
             value: value,
           ),
